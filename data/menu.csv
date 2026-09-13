@@ -1,0 +1,5 @@
+id,category_id,name,price,status
+1,1,Paneer Tikka,12.00,Available
+2,1,Spring Rolls,9.50,Available
+3,2,Fresh Lime Soda,4.00,Available
+4,2,Iced Americano,5.50,Available
