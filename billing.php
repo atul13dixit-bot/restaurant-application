@@ -42,7 +42,7 @@ $tables = readCSV('tables.csv');
     <div class="tabs-nav">
         <a href="index.php" class="tab-link">📝 Place Order</a>
         <a href="billing.php" class="tab-link active">🧾 Billing Desk</a>
-        <a href="reports.php" class="tab-link">📊 Management Logs</a>
+        <a href="reports.php" class="tab-link">📊 Management Desk</a>
     </div>
 
     <div class="tab-content">

@@ -97,17 +97,17 @@ $menu = readCSV('menu.csv');
                             <tr>
                                 <td><?= htmlspecialchars($mItem['name']); ?></td>
                                 <td style="text-align: center; font-weight: 600;"><?= htmlspecialchars($qty); ?></td>
-                                <td style="text-align: right;">$<?= number_format((float)$mItem['price'], 2); ?></td>
-                                <td style="text-align: right; font-weight: 600;">$<?= number_format($rowTotal, 2); ?></td>
+                                <td style="text-align: right;">₹<?= number_format((float)$mItem['price'], 2); ?></td>
+                                <td style="text-align: right; font-weight: 600;">₹<?= number_format($rowTotal, 2); ?></td>
                             </tr>
                 <?php endif; endforeach; endforeach; ?>
             </tbody>
         </table>
 
         <div style="margin-top: 1.5rem;">
-            <div class="total-row"><span>Subtotal Balance:</span><strong>$<?= number_format((float)$currentInvoice['subtotal'], 2); ?></strong></div>
-            <div class="total-row"><span>Surcharge Tax (5%):</span><strong>$<?= number_format((float)$currentInvoice['tax'], 2); ?></strong></div>
-            <div class="total-row grand-total"><span>Grand Total Net:</span><span>$<?= number_format((float)$currentInvoice['grand_total'], 2); ?></span></div>
+            <div class="total-row"><span>Subtotal Balance:</span><strong>₹<?= number_format((float)$currentInvoice['subtotal'], 2); ?></strong></div>
+            <div class="total-row"><span>Surcharge Tax (5%):</span><strong>₹<?= number_format((float)$currentInvoice['tax'], 2); ?></strong></div>
+            <div class="total-row grand-total"><span>Grand Total Net:</span><span>₹<?= number_format((float)$currentInvoice['grand_total'], 2); ?></span></div>
             <div class="total-row" style="margin-top: 0.75rem; font-size: 0.85rem; color: var(--text-muted);">
                 <span>Payment Instrument:</span><span style="font-weight: 600; color: var(--primary);"><?= htmlspecialchars($currentInvoice['payment_mode']); ?></span>
             </div>
